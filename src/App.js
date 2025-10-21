@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Login from "./pages/Login/Page";
+import Dashboard from "./pages/Dashboard/Page";
+import ProjectPanel from "./pages/ProjectPanel/Page";
+import ClientFeedback from "./pages/ClientFeedback/Page";
+import ReportsKPIs from "./pages/ReportsKPIs/Page";
+import Administration from "./pages/Administration/Page";
+import Notifications from "./pages/Notifications/Page";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} />
+      <Route path="/project-panel" element={<Layout><ProjectPanel /></Layout>} />
+      <Route path="/client-feedback" element={<Layout><ClientFeedback /></Layout>} />
+      <Route path="/reports-kpis" element={<Layout><ReportsKPIs /></Layout>} />
+      <Route path="/administration" element={<Layout><Administration /></Layout>} />
+      <Route path="/notifications" element={<Layout><Notifications /></Layout>} />
+    </Routes>
   );
 }
-
-export default App;
