@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import '@coreui/coreui/dist/css/coreui.min.css';
 import Layout from "./components/Layout";
 import Login from "./pages/Login/Page";
 import Dashboard from "./pages/Dashboard/Page";
