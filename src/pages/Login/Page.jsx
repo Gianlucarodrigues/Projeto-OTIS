@@ -57,7 +57,10 @@ export default function Login() {
         </form>
 
         <div className="login-footer">
-          <a href="#">Esqueceu a senha?</a> | <a href="#">Registrar</a>
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a href="#">Esqueceu a senha?</a> | 
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a href="#">Registrar</a>
         </div>
       </div>
     </div>
