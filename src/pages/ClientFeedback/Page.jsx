@@ -10,7 +10,7 @@ const mockFeedbacks = [
 ];
 
 export default function AdminFeedback() {
-  const [feedbacks, setFeedbacks] = useState(mockFeedbacks);
+  const [feedbacks] = useState(mockFeedbacks);
   const [filter, setFilter] = useState("");
 
   const filtered = feedbacks.filter(
