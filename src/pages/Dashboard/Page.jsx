@@ -1,4 +1,4 @@
-import { CContainer, CRow, CCol, CCard ,CCardBody, CCardTitle, CCardText, CAlert, CProgress, CProgressBar} from '@coreui/react';
+import { CContainer, CRow, CCol, CCard ,CCardBody, CCardTitle, CCardText} from '@coreui/react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend, BarChart, Bar, PieChart, Pie, Cell} from 'recharts';
 import "../../styles/Dashboard.css";
 
