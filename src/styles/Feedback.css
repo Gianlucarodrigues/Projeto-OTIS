@@ -1,0 +1,142 @@
+/* ===== Body e Container ===== */
+body {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f111a, #1a1c29);
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+}
+
+.admin-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px 30px;
+}
+
+/* ===== Título ===== */
+.admin-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(90deg, #f85b5b, #fb7070);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* ===== Filtro ===== */
+.admin-filter {
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  border: none;
+  background: #1e1e2f;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.admin-filter:focus {
+  outline: none;
+  box-shadow: 0 0 10px #facc1555, 0 4px 20px rgba(0,0,0,0.7);
+}
+
+/* ===== Tabela Container ===== */
+.table-container {
+  overflow-x: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* ===== Tabela ===== */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(30,30,50,0.9);
+  border-radius: 15px;
+  overflow: hidden;
+  min-width: 700px;
+}
+
+/* ===== Cabeçalho ===== */
+.admin-table th {
+  background: linear-gradient(90deg, #111226, #1e1e2f);
+  font-weight: 600;
+  text-align: left;
+  padding: 18px 15px;
+  color: #ff8383;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #333;
+}
+
+/* ===== Linhas ===== */
+.admin-table tbody tr {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.admin-table tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+  transform: scale(1.01);
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.03);
+}
+
+/* ===== Células ===== */
+.admin-table td {
+  padding: 15px 15px;
+  vertical-align: middle;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+/* ===== Avaliações ===== */
+.admin-table td .stars {
+  font-size: 1.1rem;
+  color: #fa1515;
+  text-shadow: 0 0 5px #facc15aa;
+}
+
+/* ===== Mensagem de tabela vazia ===== */
+.admin-table tbody tr td[colspan] {
+  text-align: center;
+  padding: 25px 0;
+  color: #999;
+  font-style: italic;
+}
+
+/* ===== Scroll elegante ===== */
+.table-container::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #fa1515;
+  border-radius: 4px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .admin-table th, .admin-table td {
+    padding: 12px 10px;
+  }
+  .admin-title {
+    font-size: 2rem;
+  }
+  .admin-filter {
+    padding: 12px 15px;
+  }
+}

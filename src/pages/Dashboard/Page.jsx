@@ -1,4 +1,3 @@
-import React from 'react';
 import { CContainer, CRow, CCol, CCard ,CCardBody, CCardTitle, CCardText, CAlert, CProgress, CProgressBar} from '@coreui/react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend, BarChart, Bar, PieChart, Pie, Cell} from 'recharts';
 import "../../styles/Dashboard.css";
@@ -39,7 +38,7 @@ const dataQualidade = [
 ];
 
 const COLORS = ["#162447", "#e94560"];
-function App() {
+function Dashboard() {
   return (
     <>
     <CContainer className="py-4">
@@ -133,7 +132,5 @@ function App() {
       </ResponsiveContainer>
     </div>
     </>
-  );
-}
+  );} export default Dashboard;
 
-export default App;
