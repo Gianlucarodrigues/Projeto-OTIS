@@ -12,8 +12,8 @@ import Notifications from "./pages/Notifications/Page";
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Layout><Dashboard /></Layout>} />
       <Route path="/project-panel" element={<Layout><ProjectPanel /></Layout>} />
       <Route path="/client-feedback" element={<Layout><ClientFeedback /></Layout>} />
       <Route path="/reports-kpis" element={<Layout><ReportsKPIs /></Layout>} />
